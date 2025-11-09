@@ -1,5 +1,3 @@
-package factory;
-
 import cars.Car;
 import cars.Minivan;
 import cars.Sedan;
@@ -7,7 +5,7 @@ import cars.Truck;
 
 import java.util.List;
 
-public class HardCodeValuesFactory {
+public class HardCodeValues {
     public static String getDestinationName() {
         return "Burabay";
     }

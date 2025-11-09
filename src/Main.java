@@ -1,5 +1,4 @@
 import cars.Car;
-import factory.HardCodeValuesFactory;
 import visitors.EstimationOfSellingPriceVisitor;
 import visitors.EstimationOfTripTimeVisitor;
 import visitors.FuelDistanceVisitor;
@@ -9,9 +8,9 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        String destination = HardCodeValuesFactory.getDestinationName();
-        double distance = HardCodeValuesFactory.getDistance();
-        List<Car> vehicles = HardCodeValuesFactory.createVehicles();
+        String destination = HardCodeValues.getDestinationName();
+        double distance = HardCodeValues.getDistance();
+        List<Car> vehicles = HardCodeValues.createVehicles();
 
         EstimationOfSellingPriceVisitor sellingPriceVisitor = new EstimationOfSellingPriceVisitor();
         PassengerCapacityVisitor passengerCapacityVisitor = new PassengerCapacityVisitor();
